@@ -9,9 +9,10 @@ function Nav() {
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' }
     ];
 
-    const handleClick = () => {
-        console.log("click handled")
-    }
+    const handleClick = (item) => {
+        console.log(item);
+        return item;
+    };
     
     return (
         <header className="flex-row px-1">
