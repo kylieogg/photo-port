@@ -7,7 +7,7 @@ function App() {
   const [categories] = useState([
     {
       name: 'commercial',
-      description: 'Photoes of grocery stores, food trucks, and other commercial projects',
+      description: 'Photos of grocery stores, food trucks, and other commercial projects',
     },
     { name: 'portraits', description: 'Portraits of people in my life' },
     { name: 'food', description: 'Delicious delicacies' },
@@ -24,12 +24,9 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <main>
-        <div>
-          <Gallery></Gallery>
+          <Gallery currentCategory={currentCategory}></Gallery>
           <About></About>
-        </div>
-        
-      </main>
+        </main>
     </div>
   );
 }
