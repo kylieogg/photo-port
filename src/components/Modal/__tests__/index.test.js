@@ -38,7 +38,7 @@ describe('Click Event', () => {
             onClose={mockToggleModal}
             currentPhoto={currentPhoto}
             />);
-            fireEvent.click(getbyText('Close this modal'))
+            fireEvent.click(getByText('Close this modal'))
 
             expect(mockToggleModal).toHaveBeenCalledTimes(1);
     });
