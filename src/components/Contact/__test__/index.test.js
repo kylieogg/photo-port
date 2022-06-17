@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
-import Contact from './Contact'
+import Contact from '..'
 
 afterEach(cleanup)
 
@@ -22,6 +22,6 @@ it('renders', () => {
 })
 
 it('renders', () => {
-    const { getbyTestId } =render(<Contact />)
+    const { getByTestId } =render(<Contact />)
     expect(getByTestId('button')).toHaveTextContent('Submit')
 })
